@@ -70,7 +70,7 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span class="co"># Add to git</span>
 <span class="fu">git</span><span class=""> init</span>
 <span class="fu">git</span><span class=""> add .</span>
-<span class="fu">git</span><span class=""> commit -m </span><span class="st">&quot;first commit&quot;</span>
+<span class="fu">git</span><span class=""> commit </span><span class="at">-m</span><span class=""> </span><span class="st">&quot;first commit&quot;</span>
 </code></pre></div><p>This gives us a project layout with three Haskell packages: <code>backend</code>, <code>common</code> and <code>frontend</code>. As the names indicate, <code>frontend</code> contains the Haskell code that ultimate gets compiled to JavaScript. The <code>common</code> package however contains code that is shared between the backend and the frontend. This is extremely useful for type sharing, which is impossible with something like Elm or PureScript (without explicit conversion).</p><div class="pandoc-code highlighted"><pre><code class="sh"><span class="ex">backend</span>
 <span class="ex">cabal.project</span>
 <span class="ex">common</span>
@@ -86,15 +86,15 @@ code span.wa { color: #8f5902; font-weight: bold; font-style: italic; } /* Warni
 <span class="co"># Pack it</span>
 <span class="ex">ob</span><span class=""> thunk pack dep/commonmark-hs</span>
 <span class="ex">...</span>
-</code></pre></div><p>Next, edit your <code>default.nix</code> and:</p><ul><li>Add <code>hackGet</code> and <code>pkgs</code> as arguments to the <code>project</code> if they don’t already exist</li><li>Use the packed thunk by calling <code>hackGet</code></li><li>The git rep contains multiple Haskell packages; use <code>commonmark</code> and <code>commonmark-extensions</code></li></ul><p>Here’s how your <code>default.nix</code> should look:</p><div class="pandoc-code highlighted"><pre><code class="nix"><span class="ex">project</span><span class=""> ./. ({ pkgs, hackGet, ... }: </span><span class="kw">{</span>
+</code></pre></div><p>Next, edit your <code>default.nix</code> and:</p><ul><li>Add <code>hackGet</code> and <code>pkgs</code> as arguments to the <code>project</code> if they don’t already exist</li><li>Use the packed thunk by calling <code>hackGet</code></li><li>The git rep contains multiple Haskell packages; use <code>commonmark</code> and <code>commonmark-extensions</code></li></ul><p>Here’s how your <code>default.nix</code> should look:</p><div class="pandoc-code highlighted"><pre><code class="nix"><span class="ex">project</span><span class=""> ./. </span><span class="er">(</span><span class="kw">{</span><span class=""> </span><span class="ex">pkgs,</span><span class=""> hackGet, ... }: {</span>
 <span class="">  </span><span class="ex">packages</span><span class=""> = let </span>
 <span class="">    </span><span class="ex">commonmarkSrc</span><span class=""> = hackGet ./dep/commonmark-hs</span><span class="kw">;</span>
-<span class="">  </span><span class="kw">in</span><span class=""> </span><span class="kw">{</span>
+<span class="">  </span><span class="er">in</span><span class=""> </span><span class="kw">{</span>
 <span class="">    </span><span class="ex">commonmark</span><span class=""> = commonmarkSrc + </span><span class="st">&quot;/commonmark&quot;</span><span class="kw">;</span>
 <span class="">    </span><span class="ex">commonmark-extensions</span><span class=""> = commonmarkSrc + </span><span class="st">&quot;/commonmark-extensions&quot;</span><span class="kw">;</span>
-<span class="">  </span><span class="kw">}</span><span class="">;</span>
+<span class="">  </span><span class="kw">};</span>
 <span class="">  </span><span class="ex">...</span>
-<span class="kw">}</span><span class="">)</span>
+<span class="er">}</span><span class="kw">)</span>
 </code></pre></div><p>If you run <code>ob run</code> at this point, it may complain about further missing dependencies. Let’s override each of them:</p><div class="pandoc-code highlighted"><pre><code class="sh"><span class="fu">git</span><span class=""> clone https://github.com/jgm/emojis.git dep/emojis</span>
 <span class="ex">ob</span><span class=""> thunk pack dep/emojis</span>
 </code></pre></div><p>Go back to <code>default.nix</code>, and add this new dependency to the <code>packages</code> attribute:</p><div class="pandoc-code highlighted"><pre><code class="nix"><span class="">    </span><span class="ex">...</span>
