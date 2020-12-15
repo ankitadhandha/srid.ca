@@ -1,0 +1,10 @@
+{
+  "short_name": "Srid's website",
+  "name": "Sridhar Ratnakumar",
+  "description": "Personal website and notes of Sridhar Ratnakumar",
+  "start_url": "/z-index.html",
+  "background_color": "#00b5ad",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#00b5ad"
+}

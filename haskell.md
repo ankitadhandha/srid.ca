@@ -1,0 +1,23 @@
+# Haskell
+
+[Haskell](https://www.haskell.org/) is an advanced, purely functional programming language. I use Haskell because of its correctness guarantees that are difficult or impossible to achieve with mainstream programming languages.
+
+I use the language to write complete web applications, which is to say that even frontend code is written in Haskell (compiled to JavaScript via GHCJS); I highly recommend [[obelisk]] for writing web apps in Haskell.
+
+[On GitHub](https://github.com/srid) you can find a list of Haskell projects I've worked on (and been working on), the notable of which is [[[Neuron]]], as well as [[[ka Project]]].
+
+Here are some longform articles I wrote; they are also displayed in the front page: 
+
+[[z:zettels?tag=timeline/haskell/**&timeline]]
+
+## Portals
+
+Use these portals to navigate the Haskell part of this site.
+
+* [[[2012503]]]
+* [[[2013602]]]
+* [[[cd6eda70]]]
+* [[[2013402]]]
+* [[[2012404]]]
+* [[[3d0ef6ca]]]
+* [[[2013403]]]
