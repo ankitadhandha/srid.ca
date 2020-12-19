@@ -2,7 +2,7 @@
 
 ![avatar](static/favicon.jpeg){#avatar .ui .right .floated .small .circular .image}
 
-Hey, I'm Srid, and this is my personal homepage. I'm a [*Tamilar*](https://en.wikipedia.org/wiki/Tamils) born and raised in India, who now enjoys living in Canada.
+Hey, I'm Srid, and this is my personal homepage. I'm a [தமிழர்](https://en.wikipedia.org/wiki/Tamils) born and raised in India, who now enjoys living in Canada.
 
 I'm interested in [[haskell]] & [[nix]]. My current projects are [[Neuron]], [[ka Project]] and [**Cerveau**](https://www.cerveau.app/). And I'm available for part-time consulting services; for contact info and other details, see [my résumé](./static/resume.pdf).
 
