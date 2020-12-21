@@ -1,5 +1,5 @@
 ---
-slug: 45997a20
+slug: tb3-suspend-freeze
 date: 2020-11-21T15:05
 tags: [x1c7/issues/resolved]
 ---

@@ -1,9 +1,8 @@
 ---
+slug: x1c7-review
 date: 2020-09-14T21:11
 tags: [x1c7]
 ---
-
-# WIP: X1 Carbon Gen 7 review
 
 :::{.ui .message}
 This is [**work in progress**]{.ui .red .text} note. Ultimately it will be split into individual notes, and published under a larger note, in [[X1C7]].

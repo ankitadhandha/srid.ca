@@ -1,9 +1,8 @@
 ---
+slug: x1c7-nixos-install
 date: 2020-11-21T16:03
 tags: [x1c7/install, nixos]
 ---
-
-# Installing NixOS on X1 Carbon Gen 7
 
 I used [these instructions](https://github.com/andywhite37/nixos/blob/master/DUAL_BOOT_WINDOWS_GUIDE.md)[^nat] to install NixOS alongside Windows.
 
