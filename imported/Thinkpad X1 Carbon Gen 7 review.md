@@ -4,7 +4,7 @@ date: 2020-12-21
 tags: [x1c7, timeline]
 ---
 
-On September 10th, I received my Thinkpad X1 Carbon (Gen 7, with 10th gen processor) shipped from Lenovo, and this is a brief review of having used it as my primary computer in the last 3+ months., and immediately installed [[nixos]] on it. 
+On September 10th, I received my Thinkpad X1 Carbon (Gen 7, with 10th gen processor) shipped from Lenovo, and this is a brief review of having used it as my primary computer in the last 3+ months.
 
 [^tw1]: <https://twitter.com/sridca/status/1304155221183131648>
 
