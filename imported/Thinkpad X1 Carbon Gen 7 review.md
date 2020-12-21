@@ -14,7 +14,7 @@ I recently purchased a Thinkpad X1 Carbon (Gen 7, with 10th gen processor)[^tw1]
 
 ## Setting up Linux
 
-[[f208fd4e]]
+[[Installing NixOS on X1 Carbon Gen 7]]
 
 ## What works
 
@@ -51,7 +51,7 @@ I enjoy using GNOME (see [[18084e45]]), but these issues prevent it from being p
   
 ## Performance
 
-[[0331ffad]]
+[[X1 Carbon: satisfactory performance, not for heavy use]]
 
 ## Battery Life
 
