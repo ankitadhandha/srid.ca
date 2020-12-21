@@ -1,68 +1,37 @@
 ---
 slug: x1c7-review
-date: 2020-09-14T21:11
-tags: [x1c7]
+date: 2020-12-21
+tags: [x1c7, timeline]
 ---
 
-:::{.ui .message}
-This is [**work in progress**]{.ui .red .text} note. Ultimately it will be split into individual notes, and published under a larger note, in [[X1C7]].
-:::
-
-I recently purchased a Thinkpad X1 Carbon (Gen 7, with 10th gen processor)[^tw1] and installed [[nixos]] on it. 
+On September 10th, I received my Thinkpad X1 Carbon (Gen 7, with 10th gen processor) shipped from Lenovo, and this is a brief review of having used it as my primary computer in the last 3+ months., and immediately installed [[nixos]] on it. 
 
 [^tw1]: <https://twitter.com/sridca/status/1304155221183131648>
 
 ## Setting up Linux
 
-[[Installing NixOS on X1 Carbon Gen 7]]
+I usually run [[nixos]] on my computers, which is what I did on the Carbon. Read the specifics in [[Installing NixOS on X1 Carbon Gen 7]].
 
 ## What works
 
-- Hi-res display
-  - 4k resolution
-  - 5k resolution via thunderbolt
-  	- requires 5.9 kernel (`linuxPackages_testing` on NixOS), or [this patch][edd]
-    - Netflix videos can be choppy; `mpv` works well though.
-  - GNOME selects 200% scaling for both
-- Audio
-- Microphone (and Yeti microphone)
-- Fingerprint reader
-  - Works in both login screen & command-line sudo
-- Suspend
-- Web camera
-- Trackpad
-  - Nearly as good as that of a Macbook
+Linux kernel 5.9 or later has the best hardware support. Everything including Thunderbolt and fingerprint reader works on Linux. I was surprised in particular to see that 5k resolution worked in [[LG Ultrafine 5k]], which is a retina-quality Thunderbolt monitor designed specifically for Macbooks. Compared to previous Thinkpads (such as [[P71]]), the trackpad is as good as that of a Macbook.
 
-[edd]: https://gitlab.freedesktop.org/drm/intel/-/issues/27
+## WiFI can be unstable
 
-## Stability issues
+The only annoying issue with the Carbon is that the WiFi card included in my laptop experiences periodic disconnections on Linux. Others have reported the same. See [[[X1C7 WiFi issue]]] details. In the end, I resorted to using a USB wifi dongle to sidestep this problem. 
 
-[[z:zettels?tag=x1c7/issues]]
-
-## Software issues
-
-I enjoy using GNOME (see [[18084e45]]), but these issues prevent it from being perfect:
-
-- Trackpad gestures, such as two-finger swipe to go back, do not work on web browsers, with the exception of GNOME Web (which has [buggy][gnome-web-bug] hardware acceleration)
-- **Google Chrome** is slow and laggy. **Chromium** works fine, though.
-- [**Redshift**](https://wiki.archlinux.org/index.php/Redshift) will not work on Wayland; and GNOME's night light is [broken](https://gitlab.gnome.org/GNOME/gnome-settings-daemon/-/issues/39) on 5k tiled display.
-
-[gnome-web-bug]: https://github.com/NixOS/nixpkgs/issues/32580
-  
 ## Performance
 
-[[X1 Carbon: satisfactory performance, not for heavy use]]
+Performance is good enough for general programming, but not ideal for heavy lifting. See [[[X1 Carbon: satisfactory performance, not for heavy use]]] for details.
 
 ## Battery Life
 
-Never measured. But looks to be around 6 hours (more than enough for me). I used the default [nixos-hardware] configuration; and reddit has [some tips][bat-red]. A fellow programmer reported [5 hours][bat-5h].
+I did not explicitly measure battery life on this laptop with a 4k screen. It looks to be around 6 hours which is more than enough for my use cases. I used the default [nixos-hardware] configuration; and reddit has [some tips][bat-red]. A fellow programmer reported [5 hours][bat-5h].
 
 ## Next computer
 
-My next computer, if I choose to buy one in ~3 years, will be similar to the X1C7 but with a bit more performance (assuming battery life does not suffer); i.e., if I were to make this decision again, I'd consider Thinkpad X1E or P1 - but with integrated graphics (nvidia has poor support on Linux).
+My next computer, if I choose to buy one in ~3 years, would likely be similar to the X1C7 but with a bit more performance (assuming battery life does not suffer); i.e., if I were to make this decision again, I'd consider Thinkpad X1E or P1 - but with integrated graphics (nvidia has poor support on Linux). That said, I still use the Carbon as my primary computer, and use [[VSCode]] remote to shift much of the develoment heavylifting to the [[P71]] workstation at home.
   
-[night-light]: https://timesofindia.indiatimes.com/gadgets-news/why-night-mode-may-be-more-dangerous-for-your-eyes/articleshow/72867053.cms
-
 [bat-red]: https://www.reddit.com/r/thinkpad/comments/gc5nn2/x1_extreme_gen_2_4k_uhd_linux_battery_life/fp9ebs5/?utm_source=reddit&utm_medium=web2x&context=3
 
 [bat-5h]: https://www.reddit.com/r/thinkpad/comments/hwonb5/x1_carbon_gen_8_4k_battery_life/
