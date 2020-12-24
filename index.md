@@ -2,7 +2,7 @@
 
 ![avatar](static/favicon.jpeg){#avatar .ui .right .floated .small .circular .image}
 
-Hey, I'm Srid, and this is my personal homepage; I also write at [mastodon](https://mastodon.social/@srid). I'm a [தமிழர்](https://en.wikipedia.org/wiki/Tamils) born and raised in India, who now enjoys living in Canada (Quebec).
+Hey, I'm Srid, and this is my personal homepage; I also write at [mastodon](https://mastodon.social/@srid){rel=me}. I'm a [தமிழர்](https://en.wikipedia.org/wiki/Tamils) born and raised in India, who now enjoys living in Canada (Quebec).
 
 Professionally, I'm interested in [[haskell]] & [[nix]]. My current projects are [[Neuron]], [[ka Project]] and [**Cerveau**](https://www.cerveau.app/). If you are interested in my part-time consulting services, refer to contact info and other details in [my résumé](./static/resume.pdf).
 
