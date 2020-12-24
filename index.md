@@ -10,7 +10,7 @@ Selected timeline of notes presented below (for a complete index, click the impu
 
 [[z:zettels?tag=timeline/**&timeline]]
 
-Looking for more timeline content? See [[[My mastodon stream]]].
+Looking to subscribe to (more) timeline content? See [[[My mastodon stream]]].
 
 :::{.ui .message .basic .segment}
 *I have always searched for freedom in my life. Whenever I have felt stranded or trapped I eventually moved in the direction that appeared to offer greater freedom.* -- [Vineeto](http://actualfreedom.com.au/actualism/vineeto/vineeto.htm)
