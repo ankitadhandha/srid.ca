@@ -1,4 +1,5 @@
 ---
+slug: windows-for-unix-dev
 date: 2020-07-25
 ---
 
