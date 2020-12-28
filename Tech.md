@@ -1,4 +1,6 @@
-# Tech 
+---
+slug: tech
+---
 
 Writing software programs is my passion and profession.
 
