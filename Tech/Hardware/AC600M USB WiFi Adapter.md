@@ -50,3 +50,7 @@ Insufficient privileges
 Using `sudo nmtui` however works.
 
 - [ ] Obviate the use of `sudo`, so that the 2nd WiFi autoconnects on restart.
+
+## Kernel 5.10
+
+This driver is buggly in Linux 5.10: https://github.com/brektrou/rtl8821CU/issues/109
