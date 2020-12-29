@@ -50,5 +50,3 @@ One ought to pay lip service to general medical wisdom and any dominant nutritio
   * [Georgia Ede](https://www.diagnosisdiet.com/full-article/meat)
   * [The Carnivore Code](https://carnivoremd.com/book/) (book)
 * [Paleolithic Ketogenic Diet](https://www.researchgate.net/publication/323151200_Therapeutic_protocol_of_Paleomedicina_Hungary) (PKD): a variation of the carnivore diet---high fat, organ meat, without dairy or spices---designed to heal [intestinal permeability](https://www.youtube.com/watch?v=nDPM8o9jcFA) and [certain medical conditions](https://justmeat.co/wiki/pkd/#case-studies).
-* Forums
-  * Many carnivore forums are quite narrow minded, with substandard moderation to boot; I recommend [r/meatogains](https://www.reddit.com/r/meatogains/), even for general carnivore discussion.
