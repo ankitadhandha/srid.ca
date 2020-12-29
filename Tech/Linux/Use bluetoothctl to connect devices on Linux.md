@@ -27,3 +27,7 @@ Attempting to connect to 90:7F:61:0B:E0:BF
 Connection successful
 $
 ```
+
+## See also
+
+- [NixOS wiki on Bluetooth](https://nixos.wiki/wiki/Bluetooth), which mentions these programs.
